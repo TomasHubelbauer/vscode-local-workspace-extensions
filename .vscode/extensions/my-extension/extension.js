@@ -1,8 +1,9 @@
 // Run `bun install` to install `@types/vscode`
+// See https://code.visualstudio.com/api/references/vscode-api for the reference
 const vscode = require('vscode');
 
 function activate(/** @type {vscode.ExtensionContext} */ _context) {
-  window.showInformationMessage('Hello World from my-extension!');
+  vscode.window.showInformationMessage('Hello World from my-extension!');
 }
 
 function deactivate() {
