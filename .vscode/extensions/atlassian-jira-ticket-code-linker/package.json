@@ -1,0 +1,40 @@
+{
+  "name": "atlassian-jira-ticket-code-linker",
+  "displayName": "Atlassian Jira Ticket Code Linker",
+  "description": "Linkifies Atlassian Jira ticket codes in MarkDown documents.",
+  "version": "0.0.0",
+  "publisher": "TomasHubelbauer",
+  "engines": {
+    "vscode": "^1.93.0"
+  },
+  "activationEvents": [
+    "onLanguage:markdown"
+  ],
+  "contributes": {
+    "configuration": {
+      "title": "Atlassian Jira Ticket Code Linker",
+      "properties": {
+        "atlassianJiraTicketCodeLinker.mapping": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "code": {
+                "type": "string",
+                "description": "The code of the ticket to linkify. E.g.: TICKET or TICKET-"
+              },
+              "url": {
+                "type": "string",
+                "description": "The ticket URL template. E.g.: https://jira.atlassian.com/browse/"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "main": "./extension.js",
+  "devDependencies": {
+    "@types/vscode": "^1.93.0"
+  }
+}

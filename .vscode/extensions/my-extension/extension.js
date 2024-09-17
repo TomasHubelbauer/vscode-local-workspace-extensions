@@ -3,7 +3,8 @@
 const vscode = require('vscode');
 
 function activate(/** @type {vscode.ExtensionContext} */ _context) {
-  vscode.window.showInformationMessage('Hello World from my-extension!');
+  // Uncomment this to see the extension is activated upon VS Code startup
+  //vscode.window.showInformationMessage('Hello World from my-extension!');
 }
 
 function deactivate() {

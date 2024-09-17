@@ -1,8 +1,9 @@
 {
   "name": "my-extension",
-  "description": "My Extension",
+  "displayName": "My Extension",
+  "description": "A sample extension demonstrating VS Code local workspace extensions.",
   "version": "0.0.0",
-  "publisher": "Tomas Hubelbauer",
+  "publisher": "TomasHubelbauer",
   "engines": {
     "vscode": "^1.93.0"
   },

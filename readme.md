@@ -42,3 +42,36 @@ will do the trick.
 
 Use the Output pane in VS Code to check for extension host errors with loading
 your extension if you're facing any.
+
+## Extension samples
+
+### My extension
+
+I added the simplest possible extension that could be authored.
+See `.vscode/extensions/my-extension/extension.js` and uncomment the live in
+`activate`, then restart VS Code to see the extension come alive and display
+the information popup.
+
+### Atlassian Jira ticket code linker
+
+Linkifiers Atlassian Jira ticket codes in MarkDown documents. E.g.: TICKET-1.
+
+This is a resurrection of https://github.com/TomasHubelbauer/vscode-markdown-jira-links,
+but in the form of a local workspace extension!
+
+This extension contributes configuration to set up the ticket codes and the
+corresponding URLs.
+Use `@ext:TomasHubelbauer.atlassian-jira-ticket-code-linker` to filter the
+extension settings in the VS Code settings editor or use `settings.json` either
+at the user level or the workspace level:
+
+```json
+{
+  "atlassianJiraTicketCodeLinker": [
+    {
+      "code": "TICKET",
+      "url": "https://jira.atlassian.com/browse/"
+    }
+  ]
+}
+```

@@ -1,0 +1,8 @@
+{
+  "atlassianJiraTicketCodeLinker.mapping": [
+    {
+      "code": "TICKET",
+      "url": "https://jira.atlassian.com/browse/"
+    }
+  ]
+}
