@@ -133,7 +133,7 @@ class AtlassianJiraTicketLinkProvider {
     /** @type {vscode.DocumentLink[]} */
     const links = [];
     for (const { code, url } of configuration) {
-      const regex = new RegExp(`(?<ticket>${code}-\\d+)`, 'g');
+      const regex = new RegExp(`(?<!\/)(?<ticket>${code}-\\d+)`, 'g');
 
       /** @type {RegExpExecArray | null} */
       let match;
